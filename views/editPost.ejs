@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pic-Plus-Post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Crete+Round&family=Fugaz+One&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/cssFile/newPost.css">
+</head>
+<body>
+    <form method="post" action="/<%=username%>/<%=id%>/<%=oriData.postid%>?_method=PUT">
+        <div id="box">
+            <div class="head">Edit Your Pic-Plus-Post</div>
+            <div class="input">
+                <input class="file inputs" name="image" placeholder="Enter Image Link" value="<%=oriData.image%>" required>
+            </div>
+            <div class="textarea">
+                <textarea class="text" name="post" required placeholder="Write Your Text Here..."><%=oriData.post%></textarea>
+            </div>
+            <div class="sub sub2">
+                <button class="submit">Update Post</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

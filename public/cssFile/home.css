@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background-size: cover;
+}
+#head{
+    height: 70px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(146, 236, 239);
+    display: flex;
+    justify-content: space-evenly;
+}
+.fether{
+    font-size: 2rem;
+    margin-top: 10px;
+    color: blue;
+    margin-left: 10px;
+}
+.head{
+    font-size: 2rem;
+    font-family: 'Yatra One', system-ui;    
+    color: blue;
+    font-weight: 900;
+}
+.head:hover{
+    color: blue;
+}
+.option{
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    margin-top: 10px;
+    font-family: 'DM Serif Display', serif;
+}
+.option:hover{
+    color: blue;
+}
+.navColor{
+    background-color: rgb(146, 236, 239)!important;
+}
+#contentBox{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+#middle{
+    margin: auto;
+    width: 60%;
+    margin-top: 10px;
+}
+.rProf{
+    height: 61.8px;
+    display: flex;
+    align-items: center;
+}
+.rProf:hover{
+    background-color: darkgray;
+}
+.rProf p{
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Alata', sans-serif;
+    margin-top: 18px;
+    padding-left: 10px;
+    font-weight: 550;
+    color: black;
+}
+.rProf2{
+    height: 61.8px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.rProf2:hover{
+    background-color: darkgray;
+}
+.rProf2 p{
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Alata', sans-serif;
+    margin-top: 18px;
+    padding-left: 10px;
+    font-weight: 550;
+    color: black;
+}
+.profCircle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(224, 106, 106);
+    margin-left: 20px;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.logo{
+    font-size: 2.7rem;
+    color: rgb(111, 109, 109);
+}
+.rProf2:hover .logo{
+    color: rgb(0, 81, 233);
+}
+.textHashDate{
+    font-family: 'Song Myung', serif;
+    font-size: 1.1rem;
+    padding-left: 20px;
+    color: rgb(0, 13, 255);
+}
+.post{
+    margin-top: 25px;
+}
+.profileImage{
+    height: 40px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    /* background-color: red; */
+}
+.imgprof{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 6.5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Alata', sans-serif;
+    color: #ffd5d5;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 1px solid rgb(43, 226, 220);
+    box-shadow: 2px 2px 6px rgb(97, 96, 96);
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+}
+.profUser{
+    color: black;
+    margin-top: 13px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left: 8px;
+    font-family: 'Anton', sans-serif;
+
+}
+.link{
+    text-decoration: none;
+}
+.card{
+    box-shadow: 2px 2px 6px rgb(97, 96, 96);
+}
+.optBox{
+    cursor: pointer;
+}
+.textHash{
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    padding-left: 20px;
+}
+
+@media(min-width:530px) and (max-width:720px){
+    #middle{
+        z-index: -100;
+        width: 75%;
+        margin-top: 10px;
+    }
+    .textHash{
+        font-size: 0.9rem;
+    }
+}
+
+@media(min-width:470px) and (max-width:530px){
+    #middle{
+        z-index: -100;
+        width: 85%;
+        margin-top: 10px;
+    }
+    .head{
+        font-size: 1.5rem;
+        font-family: 'Yatra One', system-ui;    
+        color: blue;
+        font-weight: 900;
+    }
+    .fether{
+        font-size: 1.5rem;
+        margin-top: 10px;
+        color: blue;
+        margin-left: 10px;
+    }
+    .textHash{
+        font-size: 0.9rem;
+    }
+}
+
+
+@media(min-width:370px) and (max-width:470px){
+    #middle{
+        z-index: -100;
+        width: 95%;
+        margin-top: 10px;
+    }
+    .head{
+        font-size: 1.2rem;
+        font-family: 'Yatra One', system-ui;    
+        color: blue;
+        font-weight: 900;
+    }
+    .fether{
+        font-size: 1.2rem;
+        margin-top: 10px;
+        color: blue;
+        margin-left: 10px;
+    }
+    .textHash{
+        font-size: 0.9rem;
+    }
+}
+
+@media(min-width:235px) and (max-width:370px){
+    #middle{
+        z-index: -100;
+        width: 95%;
+        margin-top: 10px;
+    }
+    .head{
+        font-size: 1rem;
+        font-family: 'Yatra One', system-ui;    
+        color: blue;
+        font-weight: 900;
+    }
+    .fether{
+        font-size: 1rem;
+        margin-top: 10px;
+        color: blue;
+        margin-left: 10px;
+    }
+    .textHash{
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background-size: cover;
+}
+.fether{
+    font-size: 2rem;
+    margin-top: 10px;
+    color: blue;
+    margin-left: 10px;
+}
+.head{
+    font-size: 2rem;
+    font-family: 'Yatra One', system-ui;    
+    color: blue;
+    font-weight: 900;
+}
+.head:hover{
+    color: blue;
+}
+.option{
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    margin-top: 10px;
+    font-family: 'DM Serif Display', serif;
+}
+.option:hover{
+    color: blue;
+}
+.navColor{
+    background-color: rgb(146, 236, 239)!important;
+}
+#middle{
+    margin: auto;
+    width: 60%;
+}
+.profImg{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid rgb(43, 226, 220);
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    margin: 10px auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 6rem;
+    font-weight: 700;
+    box-shadow: 2px 2px 6px rgb(97, 96, 96);
+    font-family: 'Alata', sans-serif;
+    color: #ffd5d5;
+}
+.userName{
+    font-size: 2.5rem;
+    font-family: 'Anton', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+#options{
+    height: 40px;
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.profileImage{
+    height: 40px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    /* background-color: red; */
+}
+.imgprof{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 6.5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Alata', sans-serif;
+    color: #ffd5d5;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 1px solid rgb(43, 226, 220);
+    box-shadow: 2px 2px 6px rgb(97, 96, 96);
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+}
+.profUser{
+    color: black;
+    margin-top: 13px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left: 8px;
+    font-family: 'Anton', sans-serif;
+
+}
+.post{
+    text-decoration: none;
+    margin-top: 25px;
+}
+.card{
+    box-shadow: 2px 2px 6px rgb(97, 96, 96);
+}
+.postIcon{
+    padding-right: 5px;
+}
+.post1{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 17px;
+    border: 2px solid green;
+    box-shadow: 1.5px 1.5px 6px rgb(97, 96, 96);
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+}
+.post1:active{
+    box-shadow: none;
+}
+.post1 p{
+    align-items: center;
+    text-align: center;
+    margin-top: 11px;
+}
+.post1:hover{
+    border: 2px solid rgb(235, 26, 26);
+    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+}
+.textHash{
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    padding-left: 20px;
+}
+.textHashDate{
+    font-family: 'Song Myung', serif;
+    font-size: 1.1rem;
+    padding-left: 20px;
+    color: rgb(0, 13, 255);
+}
+.more{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.ipen{
+    padding-right: 5px;
+}
+.bord{
+    border-radius: 7px;
+    border: 2px solid gray;
+}
+.bord:hover{
+    border: 2px solid gray;
+}
+
+@media(min-width:990px) and (max-width:1240px){
+    .post1{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .txtsize{
+        font-size: 0.8rem!important;
+    }
+    .userName{
+        font-size: 1.8rem;
+    }
+    .profImg{
+        height: 130px;
+        width: 130px;
+        font-size: 5rem;
+        font-weight: 650;
+    }
+    #middle{
+        width: 65%;
+    }
+
+}
+
+@media(min-width:720px) and (max-width:990px){
+    .textHashDate{
+        font-size: 1rem;
+    }
+    .post1{
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+    .txtsize{
+        font-size: 0.65rem!important;
+    }
+    .userName{
+        font-size: 1.6rem;
+    }
+    .textHash{
+        font-size: 0.9rem;
+    }
+    .profImg{
+        height: 120px;
+        width: 120px;
+        font-size: 4.7rem;
+        font-weight: 650;
+    }
+    #middle{
+        width: 65%;
+    }
+}
+
+@media(min-width:530px) and (max-width:720px){
+    #middle{
+        width: 75%;
+        margin-top: 10px;
+    }
+    .post1{
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    .textHash{
+        font-size: 0.9rem;
+    }
+    .textHashDate{
+        font-size: 1rem;
+    }
+    .profImg{
+        height: 110px;
+        width: 110px;
+        font-size: 4.5rem;
+        font-weight: 650;
+    }
+    .userName{
+        font-size: 1.6rem;
+    }
+    .txtsize{
+        font-size: 0.7rem!important;
+    }
+}
+
+
+@media(min-width:470px) and (max-width:530px){
+    #middle{
+        width: 85%;
+        margin-top: 10px;
+    }
+    .head{
+        font-size: 1.5rem;
+        font-family: 'Yatra One', system-ui;    
+        color: blue;
+        font-weight: 900;
+    }
+    .fether{
+        font-size: 1.5rem;
+        margin-top: 10px;
+        color: blue;
+        margin-left: 10px;
+    }
+    .post1{
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+    .textHash{
+        font-size: 0.9rem;
+    }
+    .textHashDate{
+        font-size: 1rem;
+    }
+    .profImg{
+        height: 105px;
+        width: 105px;
+        font-size: 4.3rem;
+        font-weight: 650;
+    }
+    .profImg{
+        height: 105px;
+        width: 105px;
+    }
+    .userName{
+        font-size: 1.5rem;
+    }
+    .txtsize{
+        font-size: 0.6rem!important;
+    }
+}
+@media(min-width:370px) and (max-width:470px){
+    .textHashDate{
+        font-size: 0.9rem;
+    }
+    .profImg{
+        height: 100px;
+        width: 100px;
+        font-size: 4.3rem;
+        font-weight: 650;
+    }
+    .userName{
+        font-size: 1.4rem;
+    }
+    .txtsize{
+        font-size: 0.6rem!important;
+    }
+    .post1{
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+    .textHash{
+        font-size: 0.9rem;
+    }
+    .post1{
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+    #middle{
+        z-index: -100;
+        width: 95%;
+        margin-top: 10px;
+    }
+    .head{
+        font-size: 1.2rem;
+        font-family: 'Yatra One', system-ui;    
+        color: blue;
+        font-weight: 900;
+    }
+    .fether{
+        font-size: 1.2rem;
+        margin-top: 10px;
+        color: blue;
+        margin-left: 10px;
+    }
+}
+@media(min-width:280px) and (max-width:370px){
+    .profImg{
+        height: 100px;
+        width: 100px;
+        font-size: 4.3rem;
+        font-weight: 650;
+    }
+    .userName{
+        font-size: 1.4rem;
+    }
+    .textHashDate{
+        font-size: 0.9rem;
+    }
+    .textHash{
+        font-size: 0.9rem;
+    }
+    .userName{
+        font-size: 1.3rem;
+    }
+    .post1{
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    #middle{
+        width: 95%;
+        margin-top: 10px;
+    }
+    .head{
+        font-size: 1rem;
+        font-family: 'Yatra One', system-ui;    
+        color: blue;
+        font-weight: 900;
+    }
+    .fether{
+        font-size: 1rem;
+        margin-top: 10px;
+        color: blue;
+        margin-left: 10px;
+    }
+    .txtsize{
+        font-size: 0.6rem!important;
+    }
+}
+

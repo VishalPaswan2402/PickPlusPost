@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pic-Plus-Post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Crete+Round&family=Fugaz+One&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/cssFile/signin.css">
+</head>
+<body>
+    <form method="post" action="/congrats">
+        <div id="box">
+            <div class="head"><p>Sign Up To Pic-Plus-Post</p></div>
+            <div class="allInput">
+                <input class="inputs" name="username" placeholder="Enter User Name" required>
+                <input class="inputs" name="email" placeholder="Enter Your E-mail" required>
+                <input class="inputs" name="mobile" placeholder="Enter Your Mobile No." required>
+                <input class="inputs" name="country" placeholder="Enter Your Country" required>
+                <input class="inputs pass1" name="password" placeholder="Enter Password" type="password" required>
+                <input class="inputs pass2" name="pass" placeholder="Enter Password Again" type="password" required>
+                <button class="submit">Create Account</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        let pass1=document.querySelector(".pass1");
+        let pass2=document.querySelector(".pass2");
+        let sub=document.querySelector(".submit");
+        sub.addEventListener("click",function(){
+            if(pass1.value !== pass2.value){
+                alert("Password Not Matched, Please Try Again...");
+            }
+        })
+    </script>
+</body>
+</html>

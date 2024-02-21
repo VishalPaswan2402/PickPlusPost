@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pic-Plus-Post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Crete+Round&family=Fugaz+One&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/cssFile/newPost.css">
+</head>
+<body>
+    <form method="post" action="/<%=username%>/<%=id%>">
+        <div id="box">
+            <div class="head">Create Your New Pic-Plus-Post</div>
+            <div class="input">
+                <input class="file inputs" name="image" placeholder="Enter Image Link" required>
+            </div>
+            <div class="textarea">
+                <textarea class="text" onkeyup="countChar(this)" name="post" placeholder="Enter Your Text Here..." required></textarea>
+            </div>
+            <div class="numText"><p class="numer">0</p>/<p class="denom">500</p></div>
+            <input class="hide" name="date">
+            <div class="sub">
+                <button class="submit">Add This Post</button>
+            </div>
+        </div>
+    </form>
+
+
+    <!-- Script query for qount letter -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Script for Date... -->
+    <script>
+        let dmy=new Date();
+        let date=dmy.getDate();
+        let month=dmy.getMonth();
+        let year=dmy.getFullYear();
+        let today="";
+        if(month==1){
+        today=`${date} January ${year}`;
+        }
+        else if(month==2){
+        today=`${date} February ${year}`;
+        }
+        else if(month==3){
+        today=`${date} March ${year}`;
+        }
+        else if(month==4){
+        today=`${date} April ${year}`;
+        }
+        else if(month==5){
+        today=`${date} May ${year}`;
+        }
+        else if(month==6){
+        today=`${date} June ${year}`;
+        }
+        else if(month==7){
+        today=`${date} July ${year}`;
+        }
+        else if(month==8){
+        today=`${date} August ${year}`;
+        }
+        else if(month==9){
+        today=`${date} September ${year}`;
+        }
+        else if(month==10){
+        today=`${date} October ${year}`;
+        }
+        else if(month==11){
+        today=`${date} November ${year}`;
+        }
+        else{
+        today=`${date} December ${year}`;
+        }
+        // console.log(today);
+        let todayDate=document.querySelector(".hide");
+        todayDate.value=today;
+        // console.log(todayDate);
+       
+        // Script code to count letter
+        let nume=document.querySelector(".numer");
+        function countChar(val){
+            var len = val.value.length;
+            if (len > 500) {
+                val.value = val.value.substring(0, 500);
+            } else {
+                $('#charNum').text(500 - len);
+                console.log(len);
+                nume.innerHTML=len;
+            }
+        };
+      </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.box{
+    height: 330px;
+    width: 700px;
+    background-color: aqua;
+    border: 6px solid blue;
+    border-radius: 20px;
+    margin: 170px auto;
+}
+.head{
+    font-size: 2rem;
+    font-family: 'Alata', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: blue;
+}
+.head p{
+    margin-top: 15px;
+    text-shadow: 1.5px 1.5px red;
+}
+.allInput{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.inputs{
+    height: 40px;
+    width: 570px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    font-family: 'Alata', sans-serif;
+}
+.submit{
+    height: 40px;
+    width: 440px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    margin: 20px auto;
+    font-family: 'Alata', sans-serif;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    font-family: 'Alata', sans-serif;
+}
+.foot a:hover{
+    color: rgb(238, 84, 84);
+}
+.delete{
+        height: 360px;
+        width: 700px;
+        background-color: aqua;
+        border: 6px solid blue;
+        border-radius: 20px;
+        margin: 170px auto;
+}
+.check{
+    margin-top: 10px;
+    font-family: 'Alata', sans-serif;
+}

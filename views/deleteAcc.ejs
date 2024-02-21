@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pic-Plus-Post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Crete+Round&family=Fugaz+One&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/cssFile/login.css">
+</head>
+<body>
+    <form method="post" action="/<%=username%>/<%=id%>?_method=delete">
+        <div class="box delete">
+            <div class="head"><p>Delete Your Account</p></div>
+            <div class="allInput">
+                <input class="inputs" name="username" value="<%=username%>" required>
+                <input class="inputs" name="email" placeholder="Enter Your E-mail" required>
+                <input class="inputs" name="password" placeholder="Enter Password" type="password" required>
+                <div class="check">
+                <input type="checkbox" id="sure" name="click1">
+                <label for="sure">Are You Sure, It Will Delete All Your Data Permanently.</label>
+                </div>
+                <button type="submit" class="submit">Delete Account</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        let sub=document.querySelector(".submit");
+        let check=document.querySelector("#sure");
+        sub.addEventListener("click",function(){
+            if(check.checked!=true){
+                check.value="0";
+            confirm("Please click on check box to delete your account permanently.")
+            }
+            else
+            check.value="1";
+            console.log(check.value);
+        })
+    </script>
+</body>
+</html>

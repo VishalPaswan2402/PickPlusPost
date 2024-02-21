@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pic-Plus-Post</title>
+    <link rel="stylesheet" href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Crete+Round&family=Fugaz+One&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Lora:ital,wght@1,500&family=Song+Myung&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=DM+Serif+Display&family=Song+Myung&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/cssFile/friends.css">
+    <link rel="stylesheet" href="/cssFile/footer.css">
+</head>
+<body>
+    <!-- NavBar fether -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top navColor">
+        <div class="container-fluid">
+          <a class="navbar-brand head"><i class="fa-solid fa-icons fether"></i>  Pic-Plus-Post</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link option home" aria-current="page" href="http://localhost:8080/home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active option" href="/<%=username%>/<%=id%>">View Your Profile</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle option" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Find People</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item option" href="http://localhost:8080/<%=username%>/<%=id%>/people">Search People</a></li>
+                  <li><a class="dropdown-item option" href="http://localhost:8080/<%=username%>/<%=id%>/following">Following</a></li>
+                  <li><a class="dropdown-item option" href="http://localhost:8080/<%=username%>/<%=id%>/followers">Followers</a></li>
+                  <li><a class="dropdown-item option" href="http://localhost:8080/<%=username%>/<%=id%>/request">Friends Request</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link option" href="http://localhost:8080/">Log Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+     </nav>
+     <form method="post" action="/<%=username%>/<%=id%>/people">
+        <div id="search">
+            <input type="search" name="people" class="search" placeholder="Search People Here...">
+            <div class="src">
+                <input class="btn btn-primary srclogo" type="submit" value="Submit ">
+            </div>
+         </div>
+     </form>
+
+     <div id="contentbox">
+        <div id="middle">
+            <br>
+            <% if (allResults && allResults.length > 0) { %>
+              <!-- Display search results here -->
+              <% for (let i = 0; i < allResults.length; i++) { %>
+                <% if (allResults[i].username!=username) { %>
+                <div class="peopleNo">
+                  <div class="name"><%=allResults[i].username %></div>
+                  <form method="get" action="/<%=allResults[i].username %>/<%=allResults[i].id %>/view" class="request">
+                    <div class="requests">
+                      <button type="submit" class="btn btn-secondary optbtn">View Profile</button>
+                    </div>
+                  </form>
+                  <!-- <div class="view">
+                    <a href="#"><button type="button" class="btn btn-secondary optbtn">Send Request</button></a>
+                  </div> -->
+                  <form method="post" action="/<%=allResults[i].username %>/<%=allResults[i].id %>/<%=username%>/<%=id%>/send" class="request">
+                    <div class="requests">
+                      <button type="submit" class="btn btn-secondary optbtn">Send Request</button>
+                    </div>
+                  </form>
+                </div>
+                <% } %>
+              <% } %>
+            <% } else { %>
+              <!-- Display a message if no results are found -->
+              <!-- <p>No results found.</p> -->
+            <% } %>
+        </div>
+     </div>
+
+     <div id="footer">
+      <div class="allIcon">
+        <a href="#"><div class="icon"><i class="fa-brands fa-linkedin-in"></i></div></a>
+        <a href="#"><div class="icon"><i class="fa-brands fa-instagram"></i></div></a>
+        <a href="#"><div class="icon"><i class="fa-brands fa-git"></i></div></a>
+        <a href="#"><div class="icon"><i class="fa-brands fa-twitter"></i></div></a>
+      </div>
+      <p class="footdata"><i class="fa-regular fa-copyright copy"></i>2024 Pic-Plus-Post India, All rights reserved.</p>
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

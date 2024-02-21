@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background-size: cover;
+}
+.fether{
+    font-size: 2rem;
+    margin-top: 10px;
+    color: blue;
+    margin-left: 10px;
+}
+.head{
+    font-size: 2rem;
+    font-family: 'Yatra One', system-ui;    
+    color: blue;
+    font-weight: 900;
+}
+.head:hover{
+    color: blue;
+}
+.option{
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    margin-top: 10px;
+    font-family: 'DM Serif Display', serif;
+}
+.option:hover{
+    color: blue;
+}
+.navColor{
+    background-color: rgb(146, 236, 239)!important;
+}
+#middle{
+    margin: auto;
+    width: 60%;
+    /* background-color: palegreen; */
+    /* height: 500px; */
+}
+.hed{
+    font-size: 2.5rem;
+    font-family: 'Alata', sans-serif;
+    font-weight: 600;
+    margin: 10px auto;
+    text-align: center;
+    color: blueviolet;
+}
+.peopleNo{
+    height: 50px;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    margin-top: 15px;
+    border: 2px solid rgb(207, 207, 207);
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+.peopleNo:hover{
+    background-color: rgb(213, 244, 254);
+    border: 2px solid rgb(163, 0, 178);
+}
+.name{
+    height: 100%;
+    width: 60%;
+    /* background-color: teal; */
+    padding-left: 15px;
+    font-family: 'Alata', sans-serif;
+    padding-top: 5px;
+}
+.request{
+    height: 100%;
+    width: 25%;
+    /* background-color: purple; */
+    font-family: 'Alata', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.requests{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.optbtn{
+    background-color: rgb(164, 160, 160);
+
+}
+
+
+@media(min-width:800px) and (max-width:1250px){
+    .optbtn{
+        font-size: 0.75rem;
+    }
+    #middle{
+        width: 85%;
+    }
+}
+
+@media(min-width:680px) and (max-width:800px){
+    .optbtn{
+        font-size: 0.7rem;
+    }
+    .peopleNo{
+        font-size: 1.2rem;
+    }
+    .name{
+        padding-top: 8px;
+    }
+    #middle{
+        width: 90%;
+    }
+    .hed{
+        font-size: 2.3rem;
+    }
+}
+
+@media(min-width:510px) and (max-width:680px){
+    #middle{
+        width: 100%;
+    }
+    .optbtn{
+        font-size: 0.55rem;
+    }
+    .peopleNo{
+        font-size: 1rem;
+    }
+    .name{
+        padding-top: 10px;
+    }
+    .hed{
+        font-size: 2rem;
+    }
+    .head{
+        font-size: 1.4rem;
+    }
+    .fether{
+        font-size: 1.4rem;
+    }
+}
+
+
+@media(min-width:430px) and (max-width:510px){
+    #middle{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .optbtn{
+        font-size: 0.5rem;
+    }
+    .peopleNo{
+        font-size: 1rem;
+    }
+    .name{
+        padding-top: 10px;
+        width: 55%;
+    }
+    .head{
+        font-size: 1.4rem;
+    }
+    .fether{
+        font-size: 1.4rem;
+    }
+    .hed{
+        font-size: 2.1rem;
+    }
+}
+
+
+@media(min-width:380px) and (max-width:430px){
+    #middle{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .optbtn{
+        font-size: 0.45rem;
+    }
+    .peopleNo{
+        font-size: 0.9rem;
+    }
+    .name{
+        padding-top: 13px;
+        width: 45%;
+    }
+    .head{
+        font-size: 1.3rem;
+    }
+    .fether{
+        font-size: 1.3rem;
+    }
+    .hed{
+        font-size: 1.9rem;
+    }
+}
+
+
+@media(min-width:300px) and (max-width:380px){
+    #middle{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .optbtn{
+        font-size: 0.37rem;
+    }
+    .peopleNo{
+        font-size: 0.8rem;
+    }
+    .name{
+        padding-top: 14px;
+        width: 45%;
+    }
+    .head{
+        font-size: 1.3rem;
+    }
+    .fether{
+        font-size: 1.3rem;
+    }
+    .hed{
+        font-size: 1.7rem;
+    }
+}
+
+/* @media(min-width:330px) and (max-width:340px){
+    #middle{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .optbtn{
+        font-size: 0.3rem;
+    }
+    .peopleNo{
+        font-size: 0.8rem;
+    }
+    .name{
+        padding-top: 14px;
+        width: 45%;
+    }
+    .head{
+        font-size: 1.3rem;
+    }
+    .fether{
+        font-size: 1.3rem;
+    }
+    .hed{
+        font-size: 1.7rem;
+    }
+} */

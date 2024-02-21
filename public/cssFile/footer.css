@@ -1,0 +1,77 @@
+#footer{
+    height: 75px;
+    width: 98%;
+    background-color: rgb(146, 236, 239);
+    margin: 10px auto;
+    display: grid;
+}
+.allIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.allIcon a{
+    text-decoration: none;
+}
+.icon{
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+    color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    transition: 0.5s ease;
+}
+.icon:hover{
+    background-color: rgb(146, 236, 239);
+    color: rgb(38, 0, 227);
+    box-shadow: 2px 2px 5px black;
+    font-size: 1.5rem;
+}
+.copy{
+    padding: 3px;
+}
+.footdata{
+    color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Alata', sans-serif;
+}
+
+@media(min-width:370px) and (max-width:470px){
+    .footdata{
+        font-size: 0.7rem;
+    }
+    .icon{
+        height: 30px;
+        width: 30px;
+        font-size: 1.1rem;
+    }
+    .icon:hover{
+        font-size: 1.3rem;
+    }
+    #footer{
+        height: 65px;
+    }
+}
+@media(min-width:280px) and (max-width:370px){
+    .footdata{
+        font-size: 0.7rem;
+    }
+    .txtsize{
+        font-size: 0.6rem!important;
+    }
+    .icon{
+        height: 28px;
+        width: 28px;
+        font-size: 1.1rem;
+    }
+}
+
